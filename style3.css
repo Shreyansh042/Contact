@@ -1,0 +1,79 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-image: url(./background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.team-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    flex-direction:calc(-1*em);
+	margin: 20px 0;
+}
+h1{
+	font-size: 45px;
+}
+.member {
+    background: linear-gradient(rgb(95, 221, 230),rgb(238, 193, 142),rgb(239, 120, 124));
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	flex-basis: calc(20% - 20px);
+	flex-grow: 1;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid white;
+}
+/* .member:hover{
+
+} */
+.member img {
+	border-radius: 50%;
+	height: 150px;
+	margin-bottom: 10px;
+	width: 150px;
+	border:2px solid white;
+}
+
+.member h2 {
+	margin: 0 0 10px;
+}
+
+.member p {
+	margin: 15px 0;
+}
+a{
+    color:rgb(31, 76, 179);
+}
+a:hover, a:active{
+    color: white;
+}
+.member p:hover{
+    color: red;
+}
+.head{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+@media (max-width:520px){
+
+body{
+	background-image: url(./wallhaven-v9djg5.jpg);
+}
+}
+@media (min-width:1500px) {
+	#smy{
+    width: 50px;
+    position: relative;
+    margin:15px 620px ;
+}
+body{
+	background-repeat:overlay:repeat-y;
+}
+}
